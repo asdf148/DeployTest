@@ -7,6 +7,12 @@ import { ProductModule } from './product/product.module';
 import { CategoryModule } from './category/category.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { User } from './auth/entity/user.entity';
+import { Product } from './product/entity/product.entity';
+import { Room } from './chat/entities/room.entity';
+import { JoinRoom } from './chat/entities/joinRoom.entity';
+import { Category } from './category/entities/Category.entity';
+import { SubCategory } from './category/entities/subCategory.entity';
 
 @Module({
   imports: [
@@ -22,6 +28,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       "synchronize": true,
       "timezone": "+09:00"
     }),
+    TypeOrmModule.forFeature([User, Product, Room, JoinRoom, Category, SubCategory]),
     ChatModule,
     AuthModule,
     ProductModule,

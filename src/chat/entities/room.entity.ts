@@ -1,5 +1,5 @@
 import { Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
-import { JoinRoom } from "./JoinRoom.entity";
+import { JoinRoom } from "./joinRoom.entity";
 import { Message } from "./Message.entity";
 
 @Entity()

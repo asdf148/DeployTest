@@ -1,4 +1,4 @@
-import { JoinRoom } from "src/chat/entities/JoinRoom.entity";
+import { JoinRoom } from "src/chat/entities/joinRoom.entity";
 import { Message } from "src/chat/entities/Message.entity";
 import { Product } from "src/product/entity/product.entity";
 import { Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";

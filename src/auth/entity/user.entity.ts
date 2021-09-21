@@ -1,7 +1,7 @@
 import { JoinRoom } from "src/chat/entities/joinRoom.entity";
 import { Message } from "src/chat/entities/Message.entity";
 import { Product } from "src/product/entity/product.entity";
-import { Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class User{
@@ -13,6 +13,9 @@ export class User{
     gcn: number;
 
     email: string;
+
+    @CreateDateColumn()
+    created_date: Date;
 
     @OneToMany(
         ()=> Product,

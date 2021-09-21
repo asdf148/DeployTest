@@ -24,8 +24,8 @@ import { SubCategory } from './category/entities/subCategory.entity';
       "username": process.env.DB_USER,
       "password": process.env.DB_PWD,
       "database": process.env.DB_NM,
-      "entities": ["dist/entity/*.entity{.ts,.js}"],
-      "synchronize": true,
+      "entities": ["dist/src/auth/entity/*.entity{.ts,.js}", "dist/src/category/entities/*.entity{.ts,.js}", "dist/src/chat/entities/*.entity{.ts,.js}", "dist/src/product/entity/*.entity{.ts,.js}"],
+      "synchronize": false,
       "timezone": "+09:00"
     }),
     TypeOrmModule.forFeature([User, Product, Room, JoinRoom, Category, SubCategory]),

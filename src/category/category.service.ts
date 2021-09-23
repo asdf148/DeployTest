@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { Category } from './entities/Category.entity';
-import { CategoryRepository } from './entities/category.repository';
-import { SubCategory } from './entities/subCategory.entity';
-import { SubCategoryRepository } from './entities/subCategory.repository';
+import { Category } from './entity/Category.entity';
+import { CategoryRepository } from './entity/category.repository';
+import { SubCategory } from './entity/subCategory.entity';
+import { SubCategoryRepository } from './entity/subCategory.repository';
 
 @Injectable()
 export class CategoryService {

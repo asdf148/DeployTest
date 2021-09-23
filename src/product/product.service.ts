@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { User } from 'src/auth/entity/user.entity';
-import { CategoryRepository } from 'src/category/entities/category.repository';
-import { SubCategoryRepository } from 'src/category/entities/subCategory.repository';
+import { CategoryRepository } from 'src/category/entity/category.repository';
+import { SubCategoryRepository } from 'src/category/entity/subCategory.repository';
 import { TokenContext } from 'src/dto/tokenContext';
 import { CreateProduct } from './dto/createProduct.dto';
 import { Product } from './entity/product.entity';

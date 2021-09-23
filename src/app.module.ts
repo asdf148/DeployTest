@@ -9,10 +9,10 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './auth/entity/user.entity';
 import { Product } from './product/entity/product.entity';
-import { Room } from './chat/entities/room.entity';
-import { JoinRoom } from './chat/entities/joinRoom.entity';
-import { Category } from './category/entities/Category.entity';
-import { SubCategory } from './category/entities/subCategory.entity';
+import { Room } from './chat/entity/room.entity';
+import { JoinRoom } from './chat/entity/joinRoom.entity';
+import { Category } from './category/entity/Category.entity';
+import { SubCategory } from './category/entity/subCategory.entity';
 
 @Module({
   imports: [

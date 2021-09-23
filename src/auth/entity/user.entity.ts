@@ -1,5 +1,5 @@
-import { JoinRoom } from "src/chat/entities/joinRoom.entity";
-import { Message } from "src/chat/entities/Message.entity";
+import { JoinRoom } from "src/chat/entity/joinRoom.entity";
+import { Message } from "src/chat/entity/Message.entity";
 import { Product } from "src/product/entity/product.entity";
 import { CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 

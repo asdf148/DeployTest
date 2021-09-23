@@ -9,10 +9,10 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './auth/entity/user.entity';
 import { Product } from './product/entity/product.entity';
-import { Room } from './chat/entity/room.entity';
-import { JoinRoom } from './chat/entity/joinRoom.entity';
 import { Category } from './category/entity/Category.entity';
 import { SubCategory } from './category/entity/subCategory.entity';
+import { Room } from './chat/entity/room.entity';
+import { JoinRoom } from './chat/entity/joinRoom.entity';
 
 @Module({
   imports: [
@@ -25,10 +25,7 @@ import { SubCategory } from './category/entity/subCategory.entity';
       "password": process.env.DB_PWD,
       "database": process.env.DB_NM,
       "entities": [
-        "dist/src/auth/entity/*.entity{.ts,.js}",
-        "dist/src/category/entities/*.entity{.ts,.js}",
-        "dist/src/chat/entities/*.entity{.ts,.js}",
-        "dist/src/product/entity/*.entity{.ts,.js}"
+        "dist/src/**/entity/*.entity{.ts,.js}"
       ],
       "synchronize": false,
       "timezone": "+09:00"

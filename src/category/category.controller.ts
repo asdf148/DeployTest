@@ -1,14 +1,4 @@
-import { Controller, Get, HttpStatus, Res } from '@nestjs/common';
-import { Response } from 'express';
-import { CategoryService } from './category.service';
+import { Controller } from '@nestjs/common';
 
 @Controller('category')
-export class CategoryController {
-  constructor(private readonly categoryService: CategoryService) {}
-
-  @Get()
-  async initialCategory(@Res() res: Response) {
-    await this.categoryService.initialCategory();
-    return res.status(HttpStatus.OK).json({ result: 'success' });
-  }
-}
+export class CategoryController {}
